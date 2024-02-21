@@ -7,6 +7,7 @@ background: https://images.unsplash.com/photo-1471958680802-1345a694ba6d?q=80&w=
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
+monaco: true
 # show line numbers in code blocks
 lineNumbers: false
 # some information about the slides, markdown enabled
