@@ -88,7 +88,7 @@ css: unocss
 
 ---
 layout: image-right
-image: /skott-graph.png
+image: skott-graph.png
 ---
 
 ## **skott does all of that**
