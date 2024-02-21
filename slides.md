@@ -120,42 +120,16 @@ image: skott-graph.png
 <div class="grid grid-cols-2 gap-x-4 pt-5">
 
 <div v-click>
-  <h3><strong>Mostly I/O</strong></h3>
-  <ul> 
-    <li>reading the whole file tree</li> 
-    <li>module resolution</li>
-    <li>write/read operations with local cache </li> 
-  </ul>
-
-<!-- 
-  ```ts
-  for await (const rootFile of this.fileReader.readdir(
-      this.fileReader.getCurrentWorkingDir(),
-      this.config.fileExtensions
-    )) {
-      const rootFileContent = await this.fileReader.read(rootFile);
-
-      // [...]
-
-      if (this.config.incremental) {
-        this.#cacheHandler.addSourceFile(rootFile, rootFileContent);
-      }
-
-      await this.addNode(rootFile);
-      await this.collectModuleDeclarations(rootFile, rootFileContent);
-    }
-  ``` -->
-
-  <img src="/code.png" class="mt-3" />
-
+  <h3><strong>skott's domain: mostly I/O</strong></h3>
+  reading the file tree, module resolution, interactions with local cache
+  <img src="/code-short-1.png" class="mt-3" />
 </div>
 
 <div v-click>
   <h3><strong>Also common things</strong></h3>  
   logging, control flows, error recovery, dependency injection, concurrency...
 
-  <img src="/code-2.png" class="mt-3" />
-
+  <img src="/code-short-2.png" class="mt-3" />
 </div>
 </div>
 
