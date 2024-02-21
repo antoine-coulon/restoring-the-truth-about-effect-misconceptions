@@ -239,10 +239,6 @@ image: skott-graph.png
   <b color="cyan">Option[HardMode]: </b> <b>npm install *universe*</b>
 
    😵‍💫 A fragmented ecosystem complexifying composability and maintenability
-
-  <div class="flex justify-center">
-    <img width="200" src="/hard-mode.png" alt="hard-mode" />
-  </div>
 </div>
 
 <div v-click>
@@ -250,10 +246,12 @@ image: skott-graph.png
 
   🫵 A streamlined way of developing software with unified standard library and ecosystem
   
-  <div class="flex justify-center">
-    <img width="300" src="/easy-mode.png" alt="easy-mode" />
-  </div>
 </div>
+
+</div>
+
+<div v-click class="flex justify-center mt-5">
+   <img width="600" src="/hard-and-easy-mode-dark.png" alt="easy-mode" />
 </div>
 
 
