@@ -249,7 +249,7 @@ layout: image
 <br>
 
 ```ts
-import { Either } from "effect";
+import { Effect, Either } from "effect";
 
 declare const lifeChoice: Either.Either<HardMode, EasyMode>;
 const easyModeOnly = lifeChoice.pipe(Effect.orDie, Effect.runSync);
