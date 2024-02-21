@@ -229,7 +229,7 @@ image: skott-graph.png
 
 </div>
 
-<div v-click class="flex justify-center mt-5">
+<div v-after class="flex justify-center mt-5">
    <img width="600" src="/hard-and-easy-mode-dark.png" alt="easy-mode" />
 </div>
 
@@ -279,6 +279,10 @@ const easyModeOnly = lifeChoice.pipe(Effect.orDie, Effect.runSync);
     <li><b>skott</b>: <b color="cyan">https://github.com/antoine-coulon/skott</b> </li>
     <li><b>Effect introduction</b>: <b color="cyan">https://github.com/antoine-coulon/effect-introduction</b></li>
     </ul>
+  </div>
+
+  <div v-click>
+    <img src="/laser-tag.gif" />
   </div>
 
 </div>
