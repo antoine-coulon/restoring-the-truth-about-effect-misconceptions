@@ -1,14 +1,5 @@
 {
   "dependencies": {
-    "fp-ts": "*",
-    "async": "*",
-    "p-queue": "*",
-    "p-retry": "*",
-    "inversify": "*",
-    "ts-pattern": "*",
-    "ts-results": "*",
-    "neverthrow": "*",
-    "ramda": "*",
-    "winston": "*"
+    "effect": "latest"
   }
 }
