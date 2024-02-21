@@ -68,38 +68,43 @@ css: unocss
     margin: 0 auto;
   }
 </style>
+
 ---
 
 ## **The problem: graphs are everywhere, but hidden**
 
-<div class="mt-15">
+<div class="flex justify-center mt-5">
+  <img width="600" src="/graphs-dark.png" />
+</div>
+
+<!-- <div class="mt-15">
   <h3><strong>What is missing?</strong></h3>
   <h3 class="mt-5">- APIs to use graphs or build tools on top</h3>
   <h3 class="mt-5">- Revealing circular/implicit/hidden/unused dependencies</h3>
   <h3 class="mt-5">- Offering architecture/design analysis capabilities</h3>
   <h3 class="mt-5">- Exposing general purpose information, metadata, third-party dependencies...</h3>
 </div>
+-->
 
 <style>
   h2 {
     color: #4c7fff;
   }
-</style>
+</style>  
 
 ---
 layout: image-right
 image: skott-graph.png
 ---
 
-## **skott does all of that**
+## **skott is there to reveal graphs**
 
-
-<div class="mt-15">
+<div class="mt-10">
   <h4 class="mt-5">- Supports <strong>JavaScript</strong> + <strong>TypeScript</strong> projects</h4>
   <h4 class="mt-5">- Can be used via <strong>CLI</strong> or <strong>JavaScript API</strong></h4>
   <h4 class="mt-5">- Written with <strong>TypeScript</strong>, running on <strong>Node.js</strong></h4>
   <h4 class="mt-5">- Focused on providing great <strong>developer experience</strong></h4>
-  <h4 class="mt-5">- Lot of <strong>display modes</strong> out of the box</h4>
+  <h4 class="mt-5">- Lot of <strong>display modes</strong> out of the box to visualize graphs</h4>
 </div> 
 
 <style>
