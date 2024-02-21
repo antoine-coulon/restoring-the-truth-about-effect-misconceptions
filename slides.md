@@ -7,7 +7,6 @@ background: https://images.unsplash.com/photo-1471958680802-1345a694ba6d?q=80&w=
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
-monaco: true
 # show line numbers in code blocks
 lineNumbers: false
 # some information about the slides, markdown enabled
@@ -221,7 +220,7 @@ image: skott-graph.png
   <h3 class="mt-5">⏳ &nbsp; Maintenance cost</h3>
   <h3 class="mt-5">📈 &nbsp; Learning curve</h3>
   <h3 class="mt-5">🔌 &nbsp; Compatibilities issues</h3>
-  <h3 class="mt-5">⚠️ &nbsp; Higher vulnerability surface</h3>
+  <h3 class="mt-5">🛡️ &nbsp; Higher risk of vulnerabilities</h3>
 </div>
 
 <style>
@@ -234,44 +233,29 @@ image: skott-graph.png
 
 ## **Select your difficulty level: Either<HardMode, EasyMode>**
 
-Two Options, or one Either...
-
 <div class="grid grid-cols-2 gap-x-4 pt-5">
 
 <div v-click>
-  Option[HardMode]: <strong>npm install *universe*</strong>
+  <b color="cyan">Option[HardMode]: </b> <b>npm install *universe*</b>
 
    😵‍💫 A fragmented ecosystem complexifying composability and maintenability
+
+  <div class="flex justify-center">
+    <img width="200" src="/hard-mode.png" alt="hard-mode" />
+  </div>
 </div>
 
 <div v-click>
-  Option[EasyMode]: <strong>npm install effect</strong>
+  <b color="cyan">Option[EasyMode]: </b> <b>npm install effect</b>
 
   🫵 A streamlined way of developing software with unified standard library and ecosystem
-
+  
+  <div class="flex justify-center">
+    <img width="300" src="/easy-mode.png" alt="easy-mode" />
+  </div>
 </div>
 </div>
 
-<div v-click>
-```json {monaco-diff}
-{
-  "fp-ts": "*",
-  "async": "*",
-  "p-queue": "*",
-  "p-retry": "*",
-  "inversify": "*",
-  "ts-pattern": "*",
-  "ts-results": "*",    
-  "neverthrow": "*",
-  "ramda": "*",
-  "winston": "*"
-}
-~~~
-{
-  "effect": "latest"
-}
-```
-</div>
 
 <style>
   h2 {
@@ -320,7 +304,6 @@ const easyModeOnly = lifeChoice.pipe(Effect.orDie, Effect.runSync);
     </ul>
   </div>
 
-  ### **Questions?**
 </div>
 
 <div class="pl-20 col-start-9 col-span-10">
