@@ -129,7 +129,7 @@ image: skott-graph.png
   <h3><strong>Also common things</strong></h3>  
   logging, control flows, error recovery, dependency injection, concurrency...
 
-  <img src="/code-short-2.png" class="mt-3" />
+  <img src="/code-short-3.png" class="mt-3" />
 </div>
 </div>
 
