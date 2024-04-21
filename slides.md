@@ -11,9 +11,10 @@ highlighter: shiki
 lineNumbers: false
 # some information about the slides, markdown enabled
 info: |
-  ## Antoine Coulon, Effect Days # 1
+  ## Antoine Coulon, Effect Paris # 1
   
-  Building skott: a journey of Effect-Driven Development
+  A la chasse aux idées reçues avec Effect
+
 # persist drawings in exports and build
 drawings:
   persist: false
@@ -21,12 +22,12 @@ drawings:
 css: unocss
 ---
 
-## **Building skott: a journey of Effect-Driven Development**
+## **A la chasse aux idées reçues avec Effect**
 
 <br>
 
 <h4 class="mt-10">
-  Antoine Coulon @ Effect Days #1
+  Antoine Coulon @ Effect Paris #1
 </h4>
 
 ---
@@ -38,9 +39,9 @@ css: unocss
     <h1><b>Antoine Coulon</b></h1>
     <div class="leading-8 mt-8 flex flex-col">
       <p class="mt-3">Lead Software Engineer @ <b color="cyan">evryg</b></p>
-      <p class="mt-3">Author of <b color="cyan">skott</b></p>
-      <p class="mt-3">Author of <b color="cyan">effect-introduction</b></p>
-      <p class="mt-3">Contributing to <b color="cyan">Rush.js, NodeSecure</b></p>
+      <p class="mt-3">Créateur <b color="cyan">skott</b></p>
+      <p class="mt-3">Créateur <b color="cyan">effect-introduction</b></p>
+      <p class="mt-3">Contributeur <b color="cyan">Rush.js, NodeSecure</b></p>
     </div>
   </div>
   <div class="border-l border-gray-400 border-opacity-25 !all:leading-12 !all:list-none my-auto">
@@ -71,231 +72,133 @@ css: unocss
 
 ---
 
-## **The problem: graphs are everywhere, but hidden**
+## **Le piège de la quête du savoir : les idées reçues**
 
-<div class="flex justify-center mt-5">
-  <img width="600" src="/graphs-dark.png" />
-</div>
+Image
 
-<!-- <div class="mt-15">
-  <h3><strong>What is missing?</strong></h3>
-  <h3 class="mt-5">- APIs to use graphs or build tools on top</h3>
-  <h3 class="mt-5">- Revealing circular/implicit/hidden/unused dependencies</h3>
-  <h3 class="mt-5">- Offering architecture/design analysis capabilities</h3>
-  <h3 class="mt-5">- Exposing general purpose information, metadata, third-party dependencies...</h3>
-</div>
+<!-- 
+
+Comme n'importe quelle technologie qui émerge, beaucoup d'interrogations surviennent, surtout dans l'écosystème JS où les gens commencent à devenir perplexes avec des nouveaux frameworks, nouvelles libs à toutes les sauces.
+
+Et comme toutes les nouvelles choses, des gens qui ne maîtrisent pas le sujet vont en parler, spéculer, sans avoir une profonde connaissance du sujet. Des idées reçues vont être avancées et des idées fausses vont aussi être conçues.
+
+https://lapausephilo.fr/2016/02/18/je-sais-que-je-ne-sais-rien-socrate
+
+D’après Socrate, la reconnaissance de notre ignorance est l’attitude nécessaire à adopter face à la quête du savoir.
+
+Nos croyances et convictions façonnent notre perception du monde. Lorsqu’on est persuadé de savoir quelque chose, on abandonne une posture de recherche et on ne voit plus du monde que ce que l’on croit.
+Toute certitude limite notre accès au savoir et renforce notre ignorance.
+
 -->
 
-<style>
-  h2 {
-    color: #4c7fff;
-  }
-</style>  
-
----
-layout: image-right
-image: skott-graph.png
 ---
 
-## **skott is there to reveal graphs**
+## **Effect n'échappera pas à la règle**
 
-<div class="mt-10">
-  <h4 class="mt-5">- Supports <strong>JavaScript</strong> + <strong>TypeScript</strong> projects</h4>
-  <h4 class="mt-5">- Can be used via <strong>CLI</strong> or <strong>JavaScript API</strong></h4>
-  <h4 class="mt-5">- Written with <strong>TypeScript</strong>, running on <strong>Node.js</strong></h4>
-  <h4 class="mt-5">- Focused on providing great <strong>developer experience</strong></h4>
-  <h4 class="mt-5">- Lot of <strong>display modes</strong> out of the box to visualize graphs</h4>
-</div> 
+- Technologie JavaScript (écosystème le plus mouvant)
+- JavaScript fatigue
 
-<style>
-  h2 {
-    color: #4c7fff;
-  }
-</style>
+<!-- 
+Comment combattre l'ignorance : la pédagogie autour des problèmes
+
+-> Forcer les gens à prendre connaissance des problèmes
+
+S'il y a bien quelque chose que j'ai appris pendant 2 ans d'Effect à accompagner des développeurs c'est de ne pas parler d'Effect, de parler
+des problèmes, de JavaScript, de TypeScript, de la concurrence, DI, type-safety, Promises.
+
+N'avancez pas Effect comme une solution révolutionnaire sans vous assurez que les problèmes sont d'abord compris.
+
+-->
 
 ---
 
-## **skott needs what all softwares needs**
+## **Le Pragmatisme au service du savoir**
 
-<div class="grid grid-cols-2 gap-x-4 pt-5">
+<!-- 
 
-<div v-click>
-  <h3><strong>skott's domain: mostly I/O</strong></h3>
-  reading the file tree, module resolution, interactions with local cache
-  <img src="/code-short-1.png" class="mt-3" />
-</div>
+Comment combattre l'ignorance : la pédagogie autour des problèmes
 
-<div v-click>
-  <h3><strong>Also common things</strong></h3>  
-  logging, control flows, error recovery, dependency injection, concurrency...
+C'est d'ailleurs ce qui est définit dans le Pragmatisme, qui est à la base une école philosophique américaine fondée par Charles Sanders Peirce à la fin du 19e siècle. 
+Le pragmatisme considère que n'est vrai que ce qui fonctionne en réalité.
 
-  <img src="/code-short-3.png" class="mt-3" />
-</div>
-</div>
+Le pragmatisme met l'accent sur l'importance de tester et d'évaluer les idées par leur efficacité pratique. Avant de proposer une solution, il est crucial de comprendre pleinement les problèmes à résoudre et d'évaluer attentivement les conséquences possibles de toute action.
 
-<style>
-  h2 {
-    color: #4c7fff;
-  }
-</style>
+Donc être pragmatique c'est être penché sur les problèmes et apporter une solution qui fonctionne réellement, dans la vraie vie, dans les tranchées du software engineering :) 
+
+-->
 
 ---
 
-## **Developing reliable software is hard**
+## **Détruisons les idées reçues à l'aide Pragmatisme**
 
-<strong>When it comes to developing software, we can put in practice various disciplines</strong>
-
-<div class="grid grid-cols-2 gap-x-4 pt-5">
-
-<div v-click>
-  <b>Test-Driven Development (TDD)</b>
-
-  <img width="500" src="/test-pass.gif" class="mt-5" />
-</div>
-
-<div v-click>
-  <b>Type-Driven Development (TDD as well)</b>
-
-  <img width="500" src="/type-level.gif" class="mt-5" />
-</div>
-
-</div>
-
-<style>
-  h2 {
-    color: #4c7fff;
-  }
-</style>
+Voyons ensemble certains idées reçues les plus répandues en ce qui concerne Effect
 
 ---
 
-## **Introducing Effect-Driven Development**
+## Idée reçue n°1 : Effect, une niche pour les gurus FP
 
+<!-- 
+Effect est une niche pour les gurus FP qui font des side-projects avec Haskell ou OCaml sur leur temps libre
 
-<div class="mt-10">
-  <h3><strong>A streamlined and unified way of developing software</strong></h3>
-  <h3 class="mt-5">Effect enables both <strong>Test</strong> and <strong>Type-Driven Development</strong></h3>
-  <h4 class="mt-5">- <strong>Dependency Inversion Principle</strong> at heart</h4>
-  <h4 class="mt-5">- Extreme <strong>type-safety</strong></h4>
-  <h4 class="mt-5">- Fast <strong>feedback loop</strong> overall</h4>
-</div>
+Des personnes utilisent Haskell/OCaml ? Mince c'est donc vrai alors...
 
-<div class="mt-5 flex justify-center">
-  <img src="/effect.png" class="rounded-full w-40 margin-0-auto" />
-</div>
+- Une niche pour les devs FP
+  - fait l'abstraction de concepts FP, veut s'éloigner du jargon. Parler de ZIO et des problématiques auxquelles ils ont fait face et comment ils se sont séparés du jargon
 
-<style>
-  h2 {
-    color: #4c7fff;
-  }
-</style>
+Effect a attiré les gens qui viennent du FP en premier car ce sont des personnes qui avaient déjà compris bcp de choses que FP résoud.
+
+Pour autant, Effect ne s'adresse pas uniquement aux FPers...
+
+D'ailleurs syntaxe impérative vs pipeable API
+
+ça permet jsutement la transition vers les générateurs
+-->
 
 ---
 
-## **The trap: Third-Party-Driven Development**
+## Idée reçue n°2 : Un code très verbeux avec des fonctions étoiles ? wtf
 
-<div class="mt-15">
-  <h3 class="mt-5">🧱 &nbsp; Composition between all dependencies is hard</h3>
-  <h3 class="mt-5">⏳ &nbsp; Maintenance cost</h3>
-  <h3 class="mt-5">📈 &nbsp; Learning curve</h3>
-  <h3 class="mt-5">🔌 &nbsp; Compatibilities issues</h3>
-  <h3 class="mt-5">🛡️ &nbsp; Higher risk of vulnerabilities</h3>
-</div>
-
-<style>
-  h2 {
-    color: #4c7fff;
-  }
-</style>
 
 ---
 
-## **Select your difficulty level: Either<HardMode, EasyMode>**
-
-<div class="grid grid-cols-2 gap-x-4 pt-5">
-
-<div v-click>
-  <b color="cyan">Option[HardMode]: </b> <b>npm install *universe*</b>
-
-   😵‍💫 A fragmented ecosystem complexifying composability and maintenability
-</div>
-
-<div v-click>
-  <b color="cyan">Option[EasyMode]: </b> <b>npm install effect</b>
-
-  🫵 A streamlined way of developing software with unified standard library and ecosystem
-  
-</div>
-
-</div>
-
-<div v-after class="flex justify-center mt-5">
-   <img width="600" src="/hard-and-easy-mode-dark.png" alt="easy-mode" />
-</div>
+## Idée reçue n°3 : Effect, uniquement requis pour des softwares très complexes
 
 
-<style>
-  h2 {
-    color: #4c7fff;
-  }
-</style>
+<!-- 
+- Une boîte à outils _uniquement_ pour développer des software complexes
+- Tout le monde fait face à X, on se confronte vite à la réalité, il n'y a pas de soft "simple"
+
+Alors déjà il y a une idée reçue dans l'idée reçue.
+
+Penser qu'il y a des soft très complexes et d'autres très faciles, c'est faux.
+Alors oui certains sont plus simples que d'autres, mais en entreprise, combien sont réellement si faciles que ça ? Gérer des erreurs ? Gérer de la concurrence ? Gérer des ressources ? Maintenir du code, composer du code ?
+
+-->
+
+---
+
+## Idée reçue n°4 : Effect tel un virus qui se répand dans toute la codebase
+
+<!--
+
+Alors celui là c'est un des mes préférés car il revient le plus souvent.
+
+Les gens ont souvent peur qu'Effect soit une question d'all-in ou pas all-in.
+
+- Effect peut être isolé à des endroits bien précis, convertis vers des Promises, Callbacks, code synchrone (si possible).
+
+- Dire qu'Effect c'est un virus c'est comme parler de la contamination async/await (asynchrone se répand, la différence c'est que Effect fait l'abstraction entre sync/async)
+
+-->
 
 --- 
-layout: image
----
 
-## **Spoiler: I chose life on easy mode for skott**
+## Visez le savoir, fuyez l'ignorance
 
-<br>
-
-```ts
-import { Effect, Either } from "effect";
-
-declare const lifeChoice: Either.Either<HardMode, EasyMode>;
-const easyModeOnly = lifeChoice.pipe(Effect.orDie, Effect.runSync);
-```
+Toute certitude limite notre accès au savoir et renforce notre ignorance.
 
 
-<div class="flex mt-5 ml-15 mr-15 justify-center">
-  <img src="/migrate-effect.png" width="600">
-</div>
+--- 
 
+## Merci
 
-
-<style>
-  h2 {
-    color: #4c7fff;
-  }
-</style>
----
-
-## **Thanks for listening**
-
-<div class="grid grid-cols-10 gap-x-4 pt-5 pr-10 pl-10">
-
-<div class="col-start-1 col-span-8 grid grid-cols-[3fr,2fr] mr-10">
-  <div class="pb-4">
-    <ul class="leading-8 mt-8 flex flex-col">
-    <li><b>skott</b>: <b color="cyan">https://github.com/antoine-coulon/skott</b> </li>
-    <li><b>Effect introduction</b>: <b color="cyan">https://github.com/antoine-coulon/effect-introduction</b></li>
-    </ul>
-  </div>
-
-  <div v-click>
-    <img src="/laser-tag.gif" />
-  </div>
-
-</div>
-
-<div class="pl-20 col-start-9 col-span-10">
-  <img src="/cyclops.jpg" class="rounded-full w-40 margin-0-auto" />
-  <img src="/effect.png" class="rounded-full w-40 margin-0-auto mt-4" />
-</div>
-
-</div>
-
-<style>
-  h2 {
-    color: #4c7fff;
-  }
-</style>
