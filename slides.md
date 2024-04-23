@@ -77,6 +77,12 @@ image: socrate.jpeg
 
 ## <b>Le piège de la quête du savoir : l'idée reçue</b>
 
+<div class="mt-10">
+  <ul>
+    <li>Se transmet rapidement à cause de la persuasion individuelle ou collective</li>
+    <li>L'idée reçue est un frein à l'apprentissage et renforce l'ignorance</li>
+  </ul>
+</div>
 
 <div v-click class="mt-15">
 
@@ -393,10 +399,18 @@ Les gens ont souvent peur qu'Effect soit une question d'all-in ou pas all-in.
 </div>
 
 <div class="mt-10" v-click>
-<i v-click>"Lorsqu’on est persuadé de savoir quelque chose, on abandonne une posture de recherche. Toute certitude limite notre accès au savoir et renforce notre ignorance. Savoir que l'on est ignorant est le meilleur moyen de ne plus en être un.</i>
-
-<i v-click>...et surtout n'oubliez pas de npm install effect" - Socrate</i>
+<i v-click>"Toute certitude limite notre accès au savoir et renforce notre ignorance. Savoir que l'on est ignorant est le meilleur moyen de ne plus en être un...</i>
 </div>
+
+<br>
+
+<div>
+<i v-click>...et surtout n'oubliez pas de npm install effect"</i>
+</div>
+
+<br>
+
+<div v-click class="text-center mr-20"><b>- Socrate</b></div>
 
 <style>
   h2 {
@@ -409,7 +423,7 @@ Les gens ont souvent peur qu'Effect soit une question d'all-in ou pas all-in.
 
 ## **Merci**
 
-Lien des slides: https://github.com/antoine-coulon/effect-paris
+Lien des slides: https://antoine-coulon.github.io/restoring-the-truth-about-effect-misconceptions
 
 - L'affirmation Socratique : https://www.cairn.info/revue-l-enseignement-philosophique-2010-4-page-38.htm
 - Quatre étapes de la compétence : https://fr.wikipedia.org/wiki/Les_quatre_%C3%A9tapes_de_la_comp%C3%A9tence
