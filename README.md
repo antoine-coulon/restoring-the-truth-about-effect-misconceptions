@@ -1,3 +1,5 @@
-# Building skott: a journey of Effect-Driven Development
+# 🇬🇧 Restoring the truth about Effect misconceptions
 
-### Antoine Coulon @ Effect Days #1 - 02/24/2024
+# 🇫🇷 À la chasse aux idées reçues avec Effect
+
+### Antoine Coulon @ Effect Paris #1 - 04/23/2024

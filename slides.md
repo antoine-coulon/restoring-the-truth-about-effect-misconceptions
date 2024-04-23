@@ -2,7 +2,7 @@
 # try also 'default' to start simple
 theme: default
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://images.unsplash.com/photo-1471958680802-1345a694ba6d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+background: ./light.avif
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -11,9 +11,9 @@ highlighter: shiki
 lineNumbers: false
 # some information about the slides, markdown enabled
 info: |
-  ## Antoine Coulon, Effect Paris # 1
+  ## Antoine Coulon, Effect Paris #1
   
-  A la chasse aux idées reçues avec Effect
+  À la chasse aux idées reçues avec Effect
 
 # persist drawings in exports and build
 drawings:
@@ -22,7 +22,7 @@ drawings:
 css: unocss
 ---
 
-## **A la chasse aux idées reçues avec Effect**
+## **À la chasse aux idées reçues avec Effect**
 
 <br>
 
@@ -40,7 +40,7 @@ css: unocss
     <div class="leading-8 mt-8 flex flex-col">
       <p class="mt-3">Lead Software Engineer @ <b color="cyan">evryg</b></p>
       <p class="mt-3">Créateur <b color="cyan">skott</b></p>
-      <p class="mt-3">Créateur <b color="cyan">effect-introduction</b></p>
+      <p class="mt-3">Auteur <b color="cyan">effect-introduction</b></p>
       <p class="mt-3">Contributeur <b color="cyan">Rush.js, NodeSecure</b></p>
     </div>
   </div>
@@ -71,10 +71,22 @@ css: unocss
 </style>
 
 ---
+layout: image-right
+image: socrate.jpeg
+---
 
-## **Le piège de la quête du savoir : les idées reçues**
+## <b>Le piège de la quête du savoir : l'idée reçue</b>
 
-Image
+
+<div v-click class="mt-15">
+
+<h3 class="ml-5"><i>"Tout ce que je sais, c'est que je ne sais rien."</i></h3>
+
+<div class="flex justify-end mr-20">
+  <h3 class="mt-3">- Socrate</h3>
+</div>
+
+</div>
 
 <!-- 
 
@@ -89,14 +101,47 @@ D’après Socrate, la reconnaissance de notre ignorance est l’attitude néces
 Nos croyances et convictions façonnent notre perception du monde. Lorsqu’on est persuadé de savoir quelque chose, on abandonne une posture de recherche et on ne voit plus du monde que ce que l’on croit.
 Toute certitude limite notre accès au savoir et renforce notre ignorance.
 
+Incompétence consciente -> quatres étapes de l'apprentisage
+
 -->
+<style>
+  h2 {
+    color: #4c7fff;
+  }
+</style>
 
 ---
 
-## **Effect n'échappera pas à la règle**
+## **Les quatre étapes de la compétence**
 
-- Technologie JavaScript (écosystème le plus mouvant)
-- JavaScript fatigue
+<div class="flex justify-center mt-9">
+  <img src="/competence.jpg" width="600" />
+</div>
+
+<style>
+  h2 {
+    color: #4c7fff;
+  }
+</style>
+---
+
+
+## **Effect ne pouvait pas échapper à la règle...**
+
+
+<div class="flex mt-15 justify-around">
+
+<div>
+  <br><b color="orange">|></b> librairie TypeScript
+  <br><b color="orange">|></b> programmation fonctionnelle 
+  <br><b color="orange">|></b> effects
+  <br><b color="orange">|></b> runtime
+  <br><b color="orange">|></b> dependency injection, testing
+  <br><b color="orange">|></b> flatMap, generators, pipeable APIs
+</div>
+
+  <img src="/bored.gif" width="400" />
+</div>
 
 <!-- 
 Comment combattre l'ignorance : la pédagogie autour des problèmes
@@ -110,9 +155,26 @@ N'avancez pas Effect comme une solution révolutionnaire sans vous assurez que l
 
 -->
 
+<style>
+  h2 {
+    color: #4c7fff;
+  }
+</style>
+
+---
+layout: image-right
+image: pragmatism.jpeg
 ---
 
 ## **Le Pragmatisme au service du savoir**
+
+École philosophique américaine fondée par Charles Sanders Peirce à la fin du XIXe siècle.
+
+- Comprendre les problèmes avant d'acter des solutions  
+
+- Tester et évaluer les idées par leur efficacité pratique
+
+- La vérité n'existe pas <i>a priori</i> mais se révèle par l'expérience
 
 <!-- 
 
@@ -127,15 +189,54 @@ Donc être pragmatique c'est être penché sur les problèmes et apporter une so
 
 -->
 
+<style>
+  h2 {
+    color: #4c7fff;
+  }
+</style>
 ---
 
-## **Détruisons les idées reçues à l'aide Pragmatisme**
+## **Détruisons les idées reçues à l'aide du Pragmatisme**
 
-Voyons ensemble certains idées reçues les plus répandues en ce qui concerne Effect
+Construisons donc <b color="green">la réalité et la vérité</b> autour d'Effect à partir de <b color="green">l'expérience</b> et non pas des <b color="orange">a priori</b>
+
+<div class="flex justify-center mt-9">
+  <img src="/no-way.gif" />
+</div>
+
+<style>
+  h2 {
+    color: #4c7fff;
+  }
+</style>
 
 ---
 
-## Idée reçue n°1 : Effect, une niche pour les gurus FP
+## **Idée reçue n°1 : <b color="orange">"Effect est une niche pour les gourous FP"</b>**
+
+<div class="flex mt-5">
+
+<div class="mt-15">
+
+<h3 class="ml-5"><i>"Forget that there is even a thing called Functional Programming"</i></h3>
+
+
+<div class="flex justify-end mr-20">
+  <h3 class="mt-3">- Effect website</h3>
+</div>
+
+<div v-click class="mt-15">
+  <h3>Vérité : <b color="green">Effect s'adresse aux développeurs qui ciblent des apps robustes, maintenables et de qualité.</b> </h3>
+</div>
+
+</div>
+
+<div>
+  <img src="/monad.webp" />
+</div>
+
+</div>
+
 
 <!-- 
 Effect est une niche pour les gurus FP qui font des side-projects avec Haskell ou OCaml sur leur temps libre
@@ -154,14 +255,24 @@ D'ailleurs syntaxe impérative vs pipeable API
 ça permet jsutement la transition vers les générateurs
 -->
 
+<style>
+  h2 {
+    color: #4c7fff;
+  }
+</style>
+
+
 ---
 
-## Idée reçue n°2 : Un code très verbeux avec des fonctions étoiles ? wtf
+## **Idée reçue n°2 : <b color="orange">"Effect est uniquement utile pour des apps complexes"</b>**
 
+<div class="flex justify-center mt-3 mb-5">
+  <img src="/complexity.png" width="700" />
+</div>
 
----
-
-## Idée reçue n°3 : Effect, uniquement requis pour des softwares très complexes
+<div v-click>
+  <h3>Vérité : <b color="green">Effect réduit la complexité des applications.</b></h3>
+</div>
 
 
 <!-- 
@@ -175,9 +286,81 @@ Alors oui certains sont plus simples que d'autres, mais en entreprise, combien s
 
 -->
 
+<style>
+  h2 {
+    color: #4c7fff;
+  }
+</style>
+
+
 ---
 
-## Idée reçue n°4 : Effect tel un virus qui se répand dans toute la codebase
+## **Idée reçue n°3 : <b color="orange">"Effect est un virus qui contamine toute la codebase"</b>**
+
+<div class="mt-10 mb-5">
+<ul>
+<li> Possibilité d'utiliser Effect de manière purement localisée : <u>runPromise | runCallback | runSync</u> </li>
+
+<li> Ce qui contamine réellement une codebase : gestion de l'asynchrone vs du synchrone  </li>
+</ul>
+
+<div class="flex justify-around mt-5 mb-3">
+
+  <div v-click>
+    <u>Async vs Sync</u>
+    <ul>
+      <li>
+        Gestion des erreurs : <b color="orange">différente</b> 
+      </li>
+      <li>
+        Control flow : <b color="orange">différent</b>
+      </li>
+      <li>
+        Typings : <b color="orange">différent</b>
+      </li>
+      <li>
+        Primitives : <b color="orange"> différentes </b> (Callbacks, Promises, etc.)
+      </li>
+      <li>
+        Syntaxe : <b color="orange"> différente </b>
+      </li>
+    </ul>
+  </div>
+
+  <div v-click>
+    <u>Effect</u>
+    <ul>
+      <li>
+        Gestion des erreurs : <b color="green">pareil</b> 
+      </li>
+      <li>
+        Control flow : <b color="green">pareil</b>
+      </li>
+      <li>
+        Typings : <b color="green">pareil</b>
+      </li>
+      <li>
+        Primitives : <b color="green"> pareil </b> (Effect)
+      </li>
+      <li>
+        Syntaxe : <b color="green"> pareil </b>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+
+
+
+  </div>
+
+</div>
+
+</div>  
+
+<div v-click>
+  <h3>Vérité : <b color="green">Effect est plus un antidote qu'un virus.</b></h3>
+</div>
 
 <!--
 
@@ -187,18 +370,54 @@ Les gens ont souvent peur qu'Effect soit une question d'all-in ou pas all-in.
 
 - Effect peut être isolé à des endroits bien précis, convertis vers des Promises, Callbacks, code synchrone (si possible).
 
-- Dire qu'Effect c'est un virus c'est comme parler de la contamination async/await (asynchrone se répand, la différence c'est que Effect fait l'abstraction entre sync/async)
+- Dire qu'Effect c'est un virus c'est comme parler de la contamination async/await (asynchrone se répand, la différence c'est que Effect fait l'abstraction entre sync/async
 
 -->
 
+<style>
+  h2 {
+    color: #4c7fff;
+  }
+</style>
+
 --- 
 
-## Visez le savoir, fuyez l'ignorance
+## **À la conquête du savoir**
 
-Toute certitude limite notre accès au savoir et renforce notre ignorance.
+<div class="mt-10">
+  <ul>
+    <li>S'assurer que les problèmes taclés par la solution sont bien <u>maîtrisés</u></li>
+    <li>Valoriser l'<u>humilité intellectuelle</u> : quatre étapes de la compétence en tête </li>
+    <li>S'appuyer sur la <u>pratique</u>, l'<u>expérience</u> et des cas concrets pour établir la vérité</li>
+  </ul>
+</div>
+
+<div class="mt-10" v-click>
+<i v-click>"Lorsqu’on est persuadé de savoir quelque chose, on abandonne une posture de recherche. Toute certitude limite notre accès au savoir et renforce notre ignorance. Savoir que l'on est ignorant est le meilleur moyen de ne plus en être un.</i>
+
+<i v-click>...et surtout n'oubliez pas de npm install effect" - Socrate</i>
+</div>
+
+<style>
+  h2 {
+    color: #4c7fff;
+  }
+</style>
 
 
 --- 
 
-## Merci
+## **Merci**
 
+Lien des slides: https://github.com/antoine-coulon/effect-paris
+
+- L'affirmation Socratique : https://www.cairn.info/revue-l-enseignement-philosophique-2010-4-page-38.htm
+- Quatre étapes de la compétence : https://fr.wikipedia.org/wiki/Les_quatre_%C3%A9tapes_de_la_comp%C3%A9tence
+- Le Pragmatisme : https://fr.wikipedia.org/wiki/Pragmatisme
+- Effect : https://effect.website
+
+<style>
+  h2 {
+    color: #4c7fff;
+}
+</style>
